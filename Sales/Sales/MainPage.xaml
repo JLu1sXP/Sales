@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Sales"
+             x:Class="Sales.MainPage">
+
+    <ScrollView BackgroundColor="Black">
+        <StackLayout
+            Margin="10"
+            Padding="10"
+            BackgroundColor="LightSkyBlue">
+            <!-- Place new controls here -->
+
+            <Grid
+                VerticalOptions="CenterAndExpand"
+                >
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Image
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Grid.Row="0"
+                    Source="Network.ico"
+                    WidthRequest="400"
+                />
+                
+                <Label 
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    HorizontalOptions="Start"
+                    Text="Usuario"
+                />
+                <Entry
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Placeholder="Ingrese el nombre de usuario"
+                />
+                <Label 
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    HorizontalOptions="Start"
+                    Text="Password"
+                />
+                <Entry
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    Placeholder="Ingrese la contraseña"
+                />
+
+                <Button
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Grid.Row="3"
+                    BorderRadius="5"
+                    Text="Login"
+                    />
+
+            </Grid>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
